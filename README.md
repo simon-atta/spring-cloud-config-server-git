@@ -1,3 +1,3 @@
 # Introduction 
-Objective of this repo is handle all kind of configuration need by AVICSS application.
+Git repository for config server.
 
