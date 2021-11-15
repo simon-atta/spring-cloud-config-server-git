@@ -1,0 +1,3 @@
+services:
+  discovery:
+    host: https://prod.dis.com/

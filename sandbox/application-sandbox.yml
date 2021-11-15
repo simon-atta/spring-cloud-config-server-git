@@ -1,0 +1,42 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    discovery:
+      locator:
+        enabled: true
+    kubernetes:
+      loadbalancer:
+        enabled: true
+      enabled: true
+
+eureka:
+  client:
+    enabled: false
+
+
+security:
+  authURL: https://sandbox.dis.com
+  key: securityKey
+
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+
+      show-details: always
+      status:
+        http-mapping:
+          down: 500
+          out_of_service: 503
+          warning: 500
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true

@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    discovery:
+      locator:
+        enabled: false
+    kubernetes:
+      loadbalancer:
+        enabled: false
+      enabled: false
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    enabled: true
